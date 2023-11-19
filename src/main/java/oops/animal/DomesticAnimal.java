@@ -1,11 +1,13 @@
 package oops.animal;
 
-public class DomesticAnimal extends Animal {
+import dummy.animal.Animal;
 
-	private String petName;
+public abstract class DomesticAnimal extends Animal {
+
+	String petName;
 
 	public DomesticAnimal(String biologicalName, String petName) {
-		super(biologicalName);
+		super(biologicalName, AnimalType.MULTI_CELLED);
 		this.petName = petName;
 	}
 
@@ -17,8 +19,11 @@ public class DomesticAnimal extends Animal {
 		this.petName = petName;
 	}
 
-	public void stayInHouse() {
-		System.out.println("Staying in house");
-	}
+	public abstract void placeOfStay();
 
+//	@Override
+//	public void makeSound() {
+//		System.out.println("In Domestic Animal");
+//	}
+//
 }

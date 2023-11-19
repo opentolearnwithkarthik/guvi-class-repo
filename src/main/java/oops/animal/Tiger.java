@@ -7,4 +7,9 @@ public class Tiger extends WildAnimal {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public void makeSound() {
+		System.out.println("Roar");
+	}
+
 }

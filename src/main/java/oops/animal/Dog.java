@@ -1,6 +1,6 @@
 package oops.animal;
 
-public class Dog extends DomesticAnimal {
+public class Dog extends DomesticAnimal{
 
 	public static boolean fourLegged = true;
 
@@ -33,13 +33,17 @@ public class Dog extends DomesticAnimal {
 	public void wagAndBark() {
 		this.wagTheTail();
 		this.bark();
-		stayInHouse();
 	}
 
 	@Override
-	public void stayInHouse() {
-		super.stayInHouse();
-		System.out.println("Dog stays in house");
+	public void placeOfStay() {
+		System.out.println("on the sofa");
+	}
+
+	@Override
+	public void makeSound() {
+		bark();
+		dummyProtected();
 	}
 
 }

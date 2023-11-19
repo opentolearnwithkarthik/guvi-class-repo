@@ -1,9 +1,11 @@
 package oops.animal;
 
-public class WildAnimal extends Animal {
+import dummy.animal.Animal;
+
+public abstract class WildAnimal extends Animal {
 
 	public WildAnimal(String biologicalName) {
-		super(biologicalName);
+		super(biologicalName, AnimalType.MULTI_CELLED);
 	}
 
 	public void killPrey(Animal prey) {

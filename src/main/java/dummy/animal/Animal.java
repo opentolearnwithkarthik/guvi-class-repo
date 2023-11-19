@@ -1,18 +1,10 @@
-package oops.animal;
+package dummy.animal;
 
-public class Animal {
+public abstract class Animal {
 
 	private String scientificName;
 
 	private AnimalType type;
-
-	public Animal(String biologicalName) {
-		this.scientificName = biologicalName;
-	}
-
-	public Animal() {
-
-	}
 
 	public Animal(String scientificName, AnimalType type) {
 		super();
@@ -30,6 +22,12 @@ public class Animal {
 
 	public AnimalType getType() {
 		return type;
+	}
+
+	public abstract void makeSound();
+	
+	protected void dummyProtected() {
+		System.out.println("Protected method in Animal class");
 	}
 
 }

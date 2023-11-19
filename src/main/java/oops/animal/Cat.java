@@ -7,4 +7,14 @@ public class Cat extends DomesticAnimal {
 		// TODO Auto-generated constructor stub
 	}
 
+	@Override
+	public void placeOfStay() {
+		System.out.println("Under the bed");
+	}
+
+	@Override
+	public void makeSound() {
+		System.out.println("Meow");
+	}
+
 }

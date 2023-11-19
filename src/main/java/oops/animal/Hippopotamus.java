@@ -6,4 +6,9 @@ public class Hippopotamus extends WildAnimal {
 		super(biologicalName);
 	}
 
+	@Override
+	public void makeSound() {
+		System.out.println("Yawn");
+	}
+
 }

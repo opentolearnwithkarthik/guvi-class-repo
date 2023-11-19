@@ -3,4 +3,5 @@
   <groupId>guvi-class-repo</groupId>
   <artifactId>guvi-jat4we</artifactId>
   <version>1</version>
+  <packaging>jar</packaging>
 </project>
