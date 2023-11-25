@@ -1,7 +1,7 @@
 package oops.animal;
 
 @FunctionalInterface
-public interface Transporter extends LiveUntilDeath {
+public interface Transporter {
 
 	void carryLoad();
 

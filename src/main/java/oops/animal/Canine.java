@@ -6,4 +6,8 @@ public interface Canine extends FourLeggedAnimal{
 
 	void howl();
 
+	default void bigTooth() {
+		System.out.println("Has big tooth");
+	}
+
 }

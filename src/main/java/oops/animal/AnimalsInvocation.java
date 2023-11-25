@@ -1,12 +1,8 @@
 package oops.animal;
 
-import dummy.animal.Animal;
-
 public class AnimalsInvocation {
 
 	public static void main(String[] args) {
-
-		Amoeba amoeba1 = new Amoeba();
 
 //		Animal a1 = new Animal();
 //		Animal a2 = new Animal("Dummy No Animal Type");

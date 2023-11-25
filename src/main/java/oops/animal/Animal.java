@@ -1,6 +1,4 @@
-package dummy.animal;
-
-import oops.animal.LiveUntilDeath;
+package oops.animal;
 
 public abstract class Animal implements LiveUntilDeath {
 	

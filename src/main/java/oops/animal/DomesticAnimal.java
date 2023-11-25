@@ -1,7 +1,5 @@
 package oops.animal;
 
-import dummy.animal.Animal;
-
 public abstract class DomesticAnimal extends Animal {
 
 	String petName;
