@@ -70,13 +70,36 @@ public class AnimalsInvocation {
 		String name1 = "India";
 		String name2 = "Bharat";
 		System.out.println(name1 + " ie " + name2);
-		
+
 		System.out.println(name1.concat(name2));
-		
+
 		System.out.println(sum(5, 10));
 		System.out.println(sum(5, 10, 15));
 		System.out.println(sum("5", "10"));
 
+		FourLeggedAnimal obj1 = new Dog("dog name", "Jimmyyyy");
+		FourLeggedAnimal obj2 = new Cat("cat name", "Poonachi");
+		// Code for getting input from user
+		int option = 1;
+		FourLeggedAnimal runtimeInstance = getInstance(option);
+		runtimeInstance.runWithFourLegs();
+		
+		boolean sharpTeeth = Canine.hasSharpTeeth;
+		System.out.println(sharpTeeth);
+		Dog.someStaticOperation();
+		dog1.someStaticOperation();
+		
+	}
+
+	private static FourLeggedAnimal getInstance(int option) {
+		switch (option) {
+		case 1:
+			return new Dog("dog name", "Jimmyyyy");
+		case 2:
+			return new Cat("cat name", "Poonachi");
+		default:
+			return null;
+		}
 	}
 
 	private static int sum(int a, int b) {

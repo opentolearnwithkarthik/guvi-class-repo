@@ -1,7 +1,9 @@
 package dummy.animal;
 
-public abstract class Animal {
+import oops.animal.LiveUntilDeath;
 
+public abstract class Animal implements LiveUntilDeath {
+	
 	private String scientificName;
 
 	private AnimalType type;

@@ -18,5 +18,5 @@ public class Circle extends TwoDimension {
 	public double getArea() {
 		return 3.14 * radius * radius;
 	}
-
+	
 }

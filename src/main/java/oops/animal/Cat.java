@@ -1,6 +1,6 @@
 package oops.animal;
 
-public class Cat extends DomesticAnimal {
+public class Cat extends DomesticAnimal implements FourLeggedAnimal {
 
 	public Cat(String biologicalName, String petName) {
 		super(biologicalName, petName);
@@ -15,6 +15,12 @@ public class Cat extends DomesticAnimal {
 	@Override
 	public void makeSound() {
 		System.out.println("Meow");
+	}
+
+	@Override
+	public void runWithFourLegs() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

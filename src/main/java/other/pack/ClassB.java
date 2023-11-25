@@ -6,4 +6,5 @@ public class ClassB extends ClassX{
 	public void test() throws Exception {
 		System.out.println("Test method in Class B");
 	}
+	
 }

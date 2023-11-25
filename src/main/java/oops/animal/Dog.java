@@ -1,6 +1,6 @@
 package oops.animal;
 
-public class Dog extends DomesticAnimal{
+public class Dog extends DomesticAnimal implements Canine {
 
 	public static boolean fourLegged = true;
 
@@ -44,6 +44,26 @@ public class Dog extends DomesticAnimal{
 	public void makeSound() {
 		bark();
 		dummyProtected();
+	}
+
+	@Override
+	public void howl() {
+		System.out.println("Dog is howling");
+	}
+
+	@Override
+	public void runWithFourLegs() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void sitsWithLegsStretched() {
+		System.out.println("overriding here sitswithlegstretched");
+	}
+	
+	public static void someStaticOperation() {
+		System.out.println("static operation");
 	}
 
 }
