@@ -69,22 +69,18 @@ public class AnimalsInvocation {
 
 		System.out.println(name1.concat(name2));
 
-		System.out.println(sum(5, 10));
-		System.out.println(sum(5, 10, 15));
-		System.out.println(sum("5", "10"));
-
 		FourLeggedAnimal obj1 = new Dog("dog name", "Jimmyyyy");
 		FourLeggedAnimal obj2 = new Cat("cat name", "Poonachi");
 		// Code for getting input from user
 		int option = 1;
 		FourLeggedAnimal runtimeInstance = getInstance(option);
 		runtimeInstance.runWithFourLegs();
-		
+
 		boolean sharpTeeth = Canine.hasSharpTeeth;
 		System.out.println(sharpTeeth);
 		Dog.someStaticOperation();
 		dog1.someStaticOperation();
-		
+
 	}
 
 	private static FourLeggedAnimal getInstance(int option) {
@@ -96,18 +92,6 @@ public class AnimalsInvocation {
 		default:
 			return null;
 		}
-	}
-
-	private static int sum(int a, int b) {
-		return a + b;
-	}
-
-	private static String sum(String a, String b) {
-		return a + b;
-	}
-
-	private static int sum(int a, int b, int c) {
-		return a + b + c;
 	}
 
 }
