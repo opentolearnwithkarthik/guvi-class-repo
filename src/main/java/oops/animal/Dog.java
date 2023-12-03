@@ -1,5 +1,8 @@
 package oops.animal;
 
+/**
+ * 
+ */
 public class Dog extends DomesticAnimal implements Canine {
 
 	public static boolean fourLegged = true;
@@ -54,16 +57,41 @@ public class Dog extends DomesticAnimal implements Canine {
 	@Override
 	public void runWithFourLegs() {
 		// TODO Auto-generated method stub
-		
+
 	}
-	
+
 	@Override
 	public void sitsWithLegsStretched() {
 		System.out.println("overriding here sitswithlegstretched");
 	}
-	
+
 	public static void someStaticOperation() {
 		System.out.println("static operation");
+	}
+
+	@Override
+	public String toString() {
+		return "Dog [furColour=" + furColour + ", petName=" + petName + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return this.petName.equals(((Dog) obj).petName);
+	}
+
+	@Override
+	public int hashCode() {
+		return petName.length();
+	}
+
+	private String furColour;
+
+	public String getFurColour() {
+		return furColour;
+	}
+
+	public void setFurColour(String furColour) {
+		this.furColour = furColour;
 	}
 
 }
